@@ -23,59 +23,48 @@ document.addEventListener("DOMContentLoaded", () => {
     const canvas = document.getElementById("art-canvas");
     const ctx = canvas.getContext("2d");
 
-    // Set canvas size
     canvas.width = 800;
     canvas.height = 500;
 
-    let isDrawing = false; // Tracks if the user is drawing
-    let lastX = 0; // Previous X coordinate
-    let lastY = 0; // Previous Y coordinate
-    let currentColor = "#000000"; // Default color
-    let lineWidth = 5; // Default brush size
-
-    // Start drawing
+    let isDrawing = false; 
+    let lastX = 0; 
+    let lastY = 0; 
+    let currentColor = "#000000"; 
+    let lineWidth = 5; 
     canvas.addEventListener("mousedown", (e) => {
         isDrawing = true;
         [lastX, lastY] = [e.offsetX, e.offsetY];
     });
 
-    // Stop drawing
     canvas.addEventListener("mouseup", () => (isDrawing = false));
     canvas.addEventListener("mouseout", () => (isDrawing = false));
 
-    // Drawing on the canvas
     canvas.addEventListener("mousemove", (e) => {
         if (!isDrawing) return;
 
-        // Set stroke styles
         ctx.strokeStyle = currentColor;
         ctx.lineWidth = lineWidth;
         ctx.lineJoin = "round";
         ctx.lineCap = "round";
 
-        // Draw the line
         ctx.beginPath();
         ctx.moveTo(lastX, lastY);
         ctx.lineTo(e.offsetX, e.offsetY);
         ctx.stroke();
 
-        // Update the last positions
         [lastX, lastY] = [e.offsetX, e.offsetY];
     });
 
-    // Handle color changes
     const colorPicker = document.getElementById("color-choice");
     colorPicker.addEventListener("input", (e) => {
         currentColor = e.target.value;
     });
 
-    // Handle brush size changes
     const brushSize = document.getElementById("brushsize");
     brushSize.addEventListener("input", (e) => {
         lineWidth = e.target.value;
     });
 
-    // Clear the canvas
     const clearButton = document.getElementById("clear-canvas");
     clearButton.addEventListener("click", () => {
         ctx.clearRect(0, 0, canvas.width, canvas.height);
