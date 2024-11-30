@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Code Art</title>
+    <link rel="icon" type="image/png" href="media/3d.png">
+    <link rel="stylesheet" href="styles.css">
+    <script src="scripts.js" defer></script>
+</head>
+
+<body>
+    <header>
+        <img src="media/ada_logo_color.png" alt="ADA University's Logo in Color" width="150">
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="team-members.html">Meet the Team</a></li>
+                <li><a href="hour-of-code.html">Hour of Code</a></li>
+                <li><a href="web-project.html">Web Project</a></li>
+                <li><a href="code-artist.html">Code Art</a></li>
+            </ul>
+        </nav>
+        <h1>Code Art - Algorithmic Creativity</h1>
+    </header>
+    <main>
+        <div style="text-align: center; margin: 20px;">
+            <section id="code-art-game">
+                <h2>Code Art Game</h2>
+                <canvas id="art-canvas"></canvas>
+                <div id="control_panel">
+                    <p>Click and draw on the canvas to create unique patterns!</p>
+                    <label for="color-choice">Choose your color:</label>
+                    <input type="color" id="color-choice" value="#000000">
+
+                    <label for="brushsize">Choose your brush size:</label>
+                    <input type="size" id="brushsize" min="1" max="50" value="5">
+                    
+                    
+                    <button id="clear-canvas">Clear</button>
+                </div>
+            </section>            
+        </div>
+        <p>Explore more about algorithmic creativity at <a href="https://www.code-art.com/">Code Art</a>. </p>
+    </main>
+    <footer>
+        <a href="https://www.ada.edu.az/en">
+        <img src="media/ada_logo_white.png" alt="ADA University's Logo in White" width="150"></a>
+        <p>&copy; 2024 ADA University</p>
+      
+    </footer>
+</body>
+</html>
