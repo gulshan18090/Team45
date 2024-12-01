@@ -1,3 +1,4 @@
+/* General style of page */
 body, h1, h2, p, ul, li, a {
     margin: 0;
     padding: 0;
@@ -5,17 +6,17 @@ body, h1, h2, p, ul, li, a {
     box-sizing: border-box;
 }
 
-/* Body Styling */
+
 body {
-    background-color: #f0f8ff; /* Light blue */
-    color: #003366; /* Dark blue */
+    background-color: #f0f8ff; 
+    color: #003366;
     line-height: 1.6;
     display: flex;
     flex-direction: column;
     min-height: 100vh;
 }
 
-/* Header Styling */
+
 header {
     background-color: #003366;
     color: #ffffff;
@@ -28,6 +29,14 @@ header {
 header img {
     display: block;
     margin: 0 auto 10px;
+    width: 300px;
+}
+
+#team-logo{
+    width: 300px; 
+    height: auto;
+    display: block;
+    margin: 0 auto 20px;
 }
 
 header h1 {
@@ -35,7 +44,6 @@ header h1 {
     margin-bottom: 10px;
 }
 
-/* Navigation Bar */
 nav {
     background-color: #00509e;
     border-radius: 8px;
@@ -69,53 +77,6 @@ nav ul li a:hover {
     background-color: #003366;
 }
 
-/* Team Member Section */
-main {
-    flex: 1;
-    padding: 20px;
-    max-width: 900px;
-    margin: 0 auto;
-}
-
-.team-member {
-    background-color: #ffffff;
-    border: 2px solid #143f6a;
-    border-radius: 10px;
-    display: flex;
-    align-items: center;
-    margin: 20px 0;
-    padding: 20px;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-    transition: transform 0.3s ease, box-shadow 0.3s ease;
-}
-
-.team-member:hover {
-    transform: translateY(-5px);
-    box-shadow: 0 8px 10px rgba(0, 0, 0, 0.15);
-    border: #333333;
-    background-color: rgb(183, 230, 230);
-}
-
-.profile-pic {
-    width: 200px;
-    height: 200px;
-    border-radius: 70%;
-    margin-right: 20px;
-    border: 3px solid #003366;
-}
-
-.member-info h2 {
-    color: #00509e;
-    margin-bottom: 10px;
-}
-
-.member-info p {
-    margin: 0;
-    font-size: 1em;
-    color: #333333;
-}
-
-/* Footer Styling */
 footer {
     background-color: #003366;
     color: #ffffff;
@@ -131,23 +92,7 @@ footer img {
 footer p {
     font-size: 0.9em;
 }
-
-div a:hover {
-    transform: translateY(2px);
-    box-shadow: 0 8px 10px rgba(0, 0, 0, 0.15);
-    border-color: #003366;
-}
-div a{
-    display: inline-block;
-    background-color: #f0f8ff;
-    padding: 15px;
-    margin-bottom: 10px;
-    border-radius: 5px;
-    text-decoration-line: none;
-    border: 2px solid white;
-
-}
-
+/* HOUR OF CODE*/
 .hourofcode{
     width: 140px;
     height: 140px;
@@ -210,12 +155,8 @@ div a{
 #contact-us-button:hover {
     background-color: #003366;
 }
-#ada-alliance-logo {
-    width: 150px; 
-    height: auto;
-    display: block;
-    margin: 0 auto 20px; 
-}
+
+/*CODE ARTIST */
 
 #controls {
     text-align: center;
@@ -251,6 +192,8 @@ div a{
     background-color: #003366;
 }
 
+/HOUR OF CODE/
+
 hr {
     margin-top: 25px;
     margin-bottom: 25px;
@@ -264,41 +207,100 @@ hr {
 
 #galery {
     display: flex;
-    flex-wrap: nowrap; /* Ensures horizontal scrolling for overflow */
-    gap: 15px; /* Space between images */
-    overflow-x: auto; /* Enable horizontal scrolling */
+    flex-wrap: nowrap; 
+    gap: 15px; 
+    overflow-x: auto; 
     padding: 15px 0;
   }
   
   #galery .image {
-    flex: 0 0 auto; /* Prevent images from shrinking or growing */
-    width: 200px; /* Set a fixed width for images */
-    height: auto; /* Maintain aspect ratio */
+    flex: 0 0 auto; 
+    width: 200px;
+    height: 400px; 
   }
   
   #galery img {
     width: 100%;
     border-radius: 10px;
-    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+    box-shadow: 0px 4px 6px rgba(46, 27, 221, 0.562);
     transition: transform 0.3s ease, box-shadow 0.3s ease;
   }
 
   #galery video {
     width: 100%;
     border-radius: 10px;
-    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+    box-shadow: 0px 4px 6px rgba(46, 27, 221, 0.562);
     transition: transform 0.3s ease, box-shadow 0.3s ease;
   }
   
   #galery img:hover {
-    transform: scale(1.05); /* Slight zoom on hover */
-    box-shadow: 0px 6px 8px rgba(0, 0, 0, 0.2);
+    transform: translateY(5px) scale(1.1); 
+    box-shadow: 0px 6px 8px rgba(46, 27, 221, 0.562);
+
   }
   #galery video:hover {
-    transform: scale(1.05); /* Slight zoom on hover */
-    box-shadow: 0px 6px 8px rgba(0, 0, 0, 0.2);
+    transform: translateY(10px) scale(1.4); 
+    box-shadow: 0px 6px 8px rgba(46, 27, 221, 0.562);
   }
+/* TEAM MEMBERS */
+main {
+    flex: 1;
+    padding: 20px;
+    max-width: 900px;
+    margin: 0 auto;
+}
+
+.team-member {
+    background-color: #ffffff;
+    border: 2px solid #143f6a;
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    margin: 20px 0;
+    padding: 20px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.team-member:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 10px rgba(0, 0, 0, 0.15);
+    border: #333333;
+    background-color: rgb(183, 230, 230);
+}
+
+.profile-pic {
+    width: 200px;
+    height: 200px;
+    border-radius: 70%;
+    margin-right: 20px;
+    border: 3px solid #003366;
+}
+
+.member-info h2 {
+    color: #00509e;
+    margin-bottom: 10px;
+}
+
+.member-info p {
+    margin: 0;
+    font-size: 1em;
+    color: #333333;
+}
 
 
+div a:hover {
+    transform: translateY(2px);
+    box-shadow: 0 8px 10px rgba(0, 0, 0, 0.15);
+    border-color: #003366;
+}
+div a{
+    display: inline-block;
+    background-color: #f0f8ff;
+    padding: 15px;
+    margin-bottom: 10px;
+    border-radius: 5px;
+    text-decoration-line: none;
+    border: 2px solid white;
 
-  
+}
